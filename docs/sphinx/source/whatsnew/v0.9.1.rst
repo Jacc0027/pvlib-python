@@ -11,7 +11,8 @@ Deprecations
 
 Enhancements
 ~~~~~~~~~~~~
-
+* Added a new model for spectral corrections in :py:func:`pvlib.atmosphere.AM_AOD_PW_spectral_correction`
+  (:issue:`1278`, :pull:`1296`)
 Bug fixes
 ~~~~~~~~~
 * Address round-off effects in :py:func:`pvlib.ivtools.utils._schumaker_qspline`
@@ -19,6 +20,10 @@ Bug fixes
 
 Testing
 ~~~~~~~
+* Added new test to run the new model for spectral corrections in :py:func:`pvlib.tests.test_atmosphere.test_AM_AOD_PW_spectral_correction`
+* Added new test to run the new model for spectral corrections in :py:func:`pvlib.tests.test_atmosphere.test_AM_AOD_PW_spectral_correction_supplied`
+* Added new test to run the new model for spectral corrections in :py:func:`pvlib.tests.test_atmosphere.test_AM_AOD_PW_spectral_correction_supplied_ambiguous`
+* Added new test to run the new model for spectral corrections in :py:func:`pvlib.tests.test_atmosphere.test_AM_AOD_PW_spectral_correction_supplied_ambiguous1`
 
 Documentation
 ~~~~~~~~~~~~~
@@ -31,3 +36,5 @@ Contributors
 * Cliff Hansen (:ghuser:`cwhanse`)
 * :ghuser:`Antoine-0`
 * :ghuser:`Carlosbogo`
+* Kevin Anderson (:ghuser:`kanderso-nrel`)
+* Jose Antonio Caballero Cuerva (:ghuser:`Jacc0027`)
