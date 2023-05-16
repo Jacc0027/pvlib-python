@@ -11,7 +11,10 @@ Deprecations
 
 Enhancements
 ~~~~~~~~~~~~
-
+Add atmosphere.caballero_spectral_correction function to estimate a 
+spectral mismatch modifier for several PV materials through empirical 
+equations using atmospheric parameters as inputs. (:pull:`1296`)
+Add atmosphere.caballero_spectral_correction function name within the API.rst file (:pull:`1296`)
 
 Bug fixes
 ~~~~~~~~~
@@ -20,7 +23,12 @@ Bug fixes
 
 Testing
 ~~~~~~~
-
+Added the following tests: 
+[1] test_caballero_spectral_correction,
+[2] test_caballero_spectral_correction_supplied, 
+[3] test_caballero_spectral_correction_supplied_ambiguous,
+[4] test_caballero_spectral_correction_supplied_ambiguous_1 
+to ensure the proper execution of the added new function (:pull:`1296`)
 
 Documentation
 ~~~~~~~~~~~~~
@@ -43,4 +51,4 @@ Contributors
 * Siddharth Kaul (:ghuser:`k10blogger`)
 * Kshitiz Gupta (:ghuser:`kshitiz305`)
 * Stefan de Lange (:ghuser:`langestefan`)
-
+* Jose Antonio Caballero (:ghuser:`Jacc0027`)
